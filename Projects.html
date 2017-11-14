@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<link rel="stylesheet" type="text/css" href="projects.css"><title>Projects</title>
+
+<script type="text/javascript">
+document.addEventListener('mousemove', function(event) {
+if(window.event) {
+event = window.event;
+}
+var mousePositionX = event.clientX;
+var mousePositionY = event.clientY;
+var elementID = document.getElementById("lowPoly");
+elementID.style.backgroundPositionX = mousePositionX / 80 + 'px';
+elementID.style.backgroundPositionY = mousePositionY / 60 + 'px';
+}, false );
+</script>
+<script type="text/javascript">
+function KFRiosStore() {
+window.location.href="https://itunes.apple.com/us/app/kung-fu-runner/id1274341897?mt=8";
+}
+function KFRandroidStore() {
+window.location.href="https://play.google.com/store/apps/details?id=com.ESosa.KungFuRun";
+}
+function KFRfacebook() {
+window.location.href="https://www.facebook.com/kungfurunner/";
+}
+</script>
+<script type="text/javascript">
+var slideIndex = 1;
+window.onload = function() {
+showSlides(slideIndex);
+};
+function plusSlides(n) {
+showSlides(slideIndex+=n);
+}
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if(n > slides.length) {slideIndex = 1}
+if(n < 1) {slideIndex = slides.length}
+for(i = 0; i < slides.length; i++) {
+slides[i].style.display="none";
+}
+for(i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script><!--Drop down -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function() {
+$("#panel").slideUp();
+$("#flip").click(function(){
+$("#panel").slideToggle("slow");
+});
+});
+$(document).ready(function() {
+$("#panelS").slideUp();
+$("#flipS").click(function() {
+$("#panelS").slideToggle("slow");
+});
+});
+</script><!--End of drop down -->
+</head><body>
+<div id="lowPoly"></div>
+<h1 class="nameHeader">Projects</h1>
+<!--Starts here -->
+<div class="slideshow-container"><!--Type starts here -->
+<div class="mySlides fade">
+<table>
+<tbody>
+<tr>
+<td rowspan="2">
+<img src="KFR/KFRIcon.png" class="appIcon"></td>
+<td colspan="3" style="height: 25px;">
+<p class="appTitle">Kung Fu Runner</p>
+</td>
+<td>
+<p class="summary"><b>Summary:</b><br>
+This one was a tough one...<br>
+fsn<br>
+kjsdnf<br>
+dfjks
+<br>
+dkfdskf
+</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">
+<button type="button" onclick="KFRiosStore()" class="downloadButtons" id="iosButton">
+<table>
+<tbody>
+<tr>
+<td>
+<img src="ApplePhoto.png" class="storeIcons"></td>
+<td>
+<p class="downloadText"><b>Link</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+</button></td>
+<td style="vertical-align: top;">
+<button type="button" onclick="KFRandroidStore()" class="downloadButtons" id="androidButton">
+<table>
+<tbody>
+<tr>
+<td>
+<img src="AndroidPhoto.png" class="storeIcons"></td>
+<td>
+<p class="downloadText"><b>Link</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+</button>
+</td>
+<td style="vertical-align: top;">
+<button type="button" onclick="KFRfacebook()" class="downloadButtons" id="facebookButton">
+<table>
+<tbody>
+<tr>
+<td>
+<img src="FacebookPhoto.png" class="storeIcons"></td>
+<td>
+<p class="downloadText"><b>Page</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+</button></td>
+</tr>
+<tr>
+<td colspan="4">
+<iframe src="https://www.youtube.com/embed/R-YyD1o1HXU" gesture="media" allowfullscreen="" frameborder="0" height="315" width="560"></iframe></td>
+</tr>
+<tr>
+<td colspan="5">
+<button type="button" class="KFRScreenshotButton" id="flipS">Screenshots</button>
+<div id="panelS">
+<table>
+<tbody>
+<tr>
+<td><img src="KFR/S1.png" class="KFRdevPhotos"></td>
+<td><img src="KFR/S2.png" class="KFRdevPhotos"></td>
+<td><img src="KFR/S3.png" class="KFRdevPhotos"></td>
+<td><img src="KFR/S4.png" class="KFRdevPhotos"></td>
+</tr>
+<tr>
+<td><img src="KFR/S5.png" class="KFRdevPhotos"></td>
+<td><img src="KFR/S6.png" class="KFRdevPhotos"></td>
+<td><img src="KFR/S7.png" class="KFRdevPhotos"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<button type="button" class="KFRGalleryButton" id="flip">Development
+Gallery</button>
+<div id="panel">
+<table>
+<tbody>
+<tr>
+<td>
+<img src="KFR/Pic1.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic2.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic3.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic4.jpg" class="KFRdevPhotos"></td>
+</tr>
+<tr>
+<td>
+<img src="KFR/Pic5.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic6.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic7.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic8.jpg" class="KFRdevPhotos"></td>
+</tr>
+<tr>
+<td>
+<img src="KFR/Pic9.jpg" class="KFRdevPhotos"></td>
+<td>
+<img src="KFR/Pic10.jpg" class="KFRdevPhotos"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--Type ends here -->
+<!--Type starts here -->
+<div class="mySlides fade">
+<table>
+<tbody>
+<tr>
+<td rowspan="2">
+<img src="PacBird/Icon.png" class="appIcon"></td>
+<td colspan="3">
+<p class="appTitle">Ms. PacBird</p>
+</td>
+<td>
+<p class="summary"><b>Summary:</b><br>
+This one was a tough one...<br>
+fsn<br>
+kjsdnf<br>
+dfjks
+</p>
+</td>
+</tr>
+<!--It goes here -->
+<tr>
+<td>
+<button type="button" onclick="PacBirdAndroidStore()" class="downloadButtons" id="androidButton">
+<table>
+<tbody>
+<tr>
+<td>
+<img src="AndroidPhoto.png" class="storeIcons"></td>
+<td>
+<p class="downloadText"><b>Link</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<iframe src="https://www.youtube.com/embed/R-YyD1o1HXU" gesture="media" allowfullscreen="" frameborder="0" height="315" width="560"></iframe></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--Type ends here -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!--Dots start -->
+<div style="text-align: center;"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span></div>
+<!--Dots end -->
+<!--Ends here -->
+</body></html>

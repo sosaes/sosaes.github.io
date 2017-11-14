@@ -1,0 +1,156 @@
+#lowPoly {
+border: 1px solid #0000;
+background-image:url("BG2.jpg");
+background-size:100% 400px;
+position: relative;
+width:100%;
+height:400px;
+z-index:1;
+top: -100px;
+}
+
+.nameHeader {
+position: relative;
+z-index: 3;
+top: -290px;
+left: 75px;
+color: white;
+font-size: 100px;
+font-family: "Monospace";
+font-style: oblique;
+}
+
+.appIcon {
+width: 200px;
+height: 200px;
+}
+
+.storeIcons {
+width:25px;
+height:25px;
+}
+
+.downloadButtons {
+height:50px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+.appTitle {
+font-size: 50px;
+}
+
+.mySlides {
+display:none;
+}
+
+.prev, .next {
+cursor:pointer;
+position:absolute;
+top:50%;
+width:auto;
+margin-top:-22px;
+padding:16px;
+color:white;
+font-weight:bold;
+font-size:18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next {
+right:100px;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+cursor:pointer;
+height:15px;
+width:15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: 0.4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: 0.4}
+to {opacity: 1}
+}
+
+.KFRdevPhotos {
+width:202px;
+height:103px;
+}
+
+.KFRdevPhotos:hover {
+transform: scale(2);
+}
+
+.coursesTable {
+border-collapse: collapse;
+border: 1px solid black;
+}
+
+.subjectInfo {
+
+}
+
+.schoolName {
+font-size: 80px;
+font-family: "Monospace";
+font-style: oblique;
+color: #3B6699;
+}
+
+.majorName {
+font-size: 40px;
+font-family: "Monospace";
+color: #386699;
+}
+
+.minorName {
+font-size: 30px;
+font-family: "Monospace";
+color: #366699;
+}
+
+.majorInfo {
+font-size: 25px;
+font-family: "Monospace";
+color: #336699;
+}
+
+#allButHeader {
+position: relative;
+z-index:2;
+top: -350px;
+}
