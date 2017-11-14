@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<!-- Make image follow mouse-->
+<script type="text/javascript">
+document.addEventListener('mousemove', function(event) {
+if(window.event) {
+event = window.event;
+}
+var mousePositionX = event.clientX;
+var mousePositionY = event.clientY;
+var elementID = document.getElementById("lowPoly");
+elementID.style.backgroundPositionX = mousePositionX / 80 + 'px';
+elementID.style.backgroundPositionY = mousePositionY / 60 + 'px';
+}, false );
+</script><!-- End of make image follow mouse--><!-- Redirect-->
+<script type="text/javascript">
+function mailTo() {
+window.location.href="mailto:esteban.sosa96@gmail.com";
+}
+function linkedIn() {
+window.location.href="http://www.linkedin.com/in/esteban-sosa-garduno";
+}
+function resume() {
+window.location.href="Resume.pdf";
+}
+</script>
+<script type="text/javascript">
+function projects() {
+window.location.href="Projects.html";
+}
+function education() {
+window.location.href="Education.html";
+}
+</script><title>EstebanSosa</title>
+
+<!-- End of redirect-->
+</head>
+<body>
+<div class="headerPics"><img class="profilePic" src="ProfilePic.png"></div>
+<div id="lowPoly"></div>
+<h1 class="nameHeader">Esteban Sosa</h1>
+<table class="contact">
+<tbody>
+<tr>
+<td> <button type="button" onclick="mailTo()" class="aboutButton" id="mailButton">
+<table>
+<tbody>
+<tr>
+<td> <img src="MailPhoto.png" style="height: 30px; width: 30px;"> </td>
+<td class="contactText"><b>esteban.sosa96@gmail.com</b>
+</td>
+</tr>
+</tbody>
+</table>
+</button> </td>
+<td> <button type="button" onclick="linkedIn()" id="linkedInButton" class="aboutButton">
+<table>
+<tbody>
+<tr>
+<td> <img src="LinkedInPhoto.png" style="height: 30px; width: 30px;"></td>
+<td class="contactText"><b>/esteban-sosa-garduno</b>
+</td>
+</tr>
+</tbody>
+</table>
+</button> </td>
+</tr>
+<tr>
+<td colspan="5" align="center"> <button type="button" onclick="resume()" id="resumeButton" class="aboutButton">
+<table>
+<tbody>
+<tr>
+<td> <img src="ResumePhoto.png" style="height: 30px; width: 30px;"></td>
+<td class="contactText"><b>Resume</b>
+</td>
+</tr>
+</tbody>
+</table>
+</button> </td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<table class="tabs">
+<tbody>
+<tr>
+<td class="tabstd"> <button type="button" onclick="about()" id="tabsButton" class="tabsButton"><b>About</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="projects()" id="tabsButton" class="tabsButton"><b>Projects</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="education()" id="tabsButton" class="tabsButton"><b>Education</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="interests()" id="tabsButton" class="tabsButton"><b>Interests</b></button>
+</td>
+</tr>
+</tbody>
+</table>
+<hr style="position: relative; top: -600px;">
+</body></html>
