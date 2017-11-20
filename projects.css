@@ -1,6 +1,6 @@
 #lowPoly {
 border: 1px solid #0000;
-background-image:url("BG2.jpg");
+background-image:url("BG2.JPG");
 background-size:100% 400px;
 position: relative;
 width:100%;
@@ -117,4 +117,97 @@ transform: scale(2);
 
 table, tr, td {
 
+}
+
+
+.tabs {
+position:relative;
+z-index:5;
+top: -650px;
+left: 800px;
+}
+
+.tabstd {
+padding:20px;
+}
+
+.tabsButton {
+background-color: Transparent;
+border:none;
+cursor:pointer;
+border-radius:25px;
+color: 	#DCDCDC;
+font-family:"Monospace";
+font-size:30px;
+}
+
+.tabsButton:hover {
+color: 		#A9A9A9;
+}
+
+.everything {
+position: relative;
+z-index: 2;
+top: -450px;
+}
+
+#projectName {
+position: relative;
+font-family:"Monospace";
+font-size: 25px;
+top: -450px;
+left: 30px;
+}
+
+.PacSPhotos {
+width:125px;
+height:207px;
+}
+
+.PacdevPhotos {
+width:94px;
+height:104px;
+}
+
+.PacSPhotos:hover {
+transform: scale(1.1);
+}
+
+.PacdevPhotos:hover {
+transform: scale(1.1);
+}
+
+.ZGGampeplay {
+width: 200px;
+height: 500px;
+}
+
+.ZGChar {
+width: 128px;
+height: 128px;
+}
+
+.ZGChar:hover {
+transform: scale(1.3);
+}
+
+.downloadButtons {
+background-color: Transparent;
+border:none;
+cursor: pointer;
+border-radius: 50px;
+font-size: 24px;
+text-align: center;
+}
+
+.downloadButtons:hover {
+transform: scale(1.05);
+background-color: #E6E6FA;
+}
+
+.KFRScreenshotButton, .KFRGalleryButton, .ZGScreenshotButton {
+background-color: Transparent;
+border: none;
+cursor: pointer;
+font-size: 40px;
 }

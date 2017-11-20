@@ -16,14 +16,8 @@ elementID.style.backgroundPositionY = mousePositionY / 60 + 'px';
 }, false );
 </script>
 <script type="text/javascript">
-function KFRiosStore() {
-window.location.href="https://itunes.apple.com/us/app/kung-fu-runner/id1274341897?mt=8";
-}
-function KFRandroidStore() {
-window.location.href="https://play.google.com/store/apps/details?id=com.ESosa.KungFuRun";
-}
-function KFRfacebook() {
-window.location.href="https://www.facebook.com/kungfurunner/";
+function PacBirdAndroidStore() {
+window.location.href="https://play.google.com/store/apps/details?id=com.esteb.floppypac&hl=es";
 }
 </script>
 <script type="text/javascript">
@@ -68,11 +62,50 @@ $("#flipS").click(function() {
 $("#panelS").slideToggle("slow");
 });
 });
+$(document).ready(function() {
+$("#panelSZ").slideUp();
+$("#flipSZ").click(function() {
+$("#panelSZ").slideToggle("slow");
+});
+});
 </script><!--End of drop down -->
-</head><body>
+<script type="text/javascript">
+function about() {
+window.location.href="index.html";
+}
+function education() {
+window.location.href="Education.html";
+}
+</script>
+</head>
+<body style="background-color: rgb(245, 245, 245);">
 <div id="lowPoly"></div>
 <h1 class="nameHeader">Projects</h1>
+<table class="tabs">
+<tbody>
+<tr>
+<td class="tabstd"> <button type="button" onclick="about()" id="tabsButton" class="tabsButton"><b>About</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="projects()" id="tabsButton" class="tabsButton"><b>Projects</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="education()" id="tabsButton" class="tabsButton"><b>Education</b></button>
+</td>
+<!--Interests Button
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button"
+onclick="interests()" id="tabsButton" class="tabsButton"><b>Interests</b></button>
+</td>
+-->
+</tr>
+</tbody>
+</table>
+<div id="projectName">
+<h1 class="projectName">Mobile Apps:</h1>
+</div>
 <!--Starts here -->
+<div class="everything">
 <div class="slideshow-container"><!--Type starts here -->
 <div class="mySlides fade">
 <table>
@@ -83,14 +116,39 @@ $("#panelS").slideToggle("slow");
 <td colspan="3" style="height: 25px;">
 <p class="appTitle">Kung Fu Runner</p>
 </td>
-<td>
+<td rowspan="5" valign="top">
+<p class="summary"><b>Release Date: </b>August
+2017</p>
+<p class="summary"><b>Technologies: </b>Unity,
+C#, Blender, Photoshop, Audacity, Lightworks</p>
 <p class="summary"><b>Summary:</b><br>
-This one was a tough one...<br>
-fsn<br>
-kjsdnf<br>
-dfjks
-<br>
-dkfdskf
+This was my second published project... and it was a tough one. After
+publishing a very simple game,
+<i>Ms. PacBird</i>, I wanted to create something more
+complex. I had never worked
+with 3D modelling or animation before, so I had to learn how to use
+Blender from scratch. On
+average, it took me around 15 hours to create each character, so it was
+a pretty lengthy process. I was proud in the end though, as I had
+finally created something that not only looked pretty cool, but
+could also move! For this game, I wanted to use the
+Unity game engine. That involved a few more hours of online courses and
+tutorials in order to know what was actually going on. Oh, I had also
+never worked with C# before, so that was another thing to learn haha.
+Later on, I realized that I would
+also need 2D assets for the icons, buttons, backgrounds, etc. Sooo it
+was time to learn how to use Photoshop... which meant more tutorials!
+And don't get me wrong, I am not complaining. Learning all these new
+technologies was very cool and rewarding. I can't say that I loved
+every minute of it, as many processes were kind of tedious (like adding
+the black border to every single frame of every single character
+animation), but in the end I loved seeing all my hard
+work pay off. It took me aroung 3 months to complete this game. It may
+seem like a simple 2D infinite runner, but the hours I had to put in in
+order to learn all this on my own, added to the actual time on design
+and development, prove that it is way harder than it looks! After
+finishing this app, I was excited to tackle new challenges, which
+brought me to my next projects...
 </p>
 </td>
 </tr>
@@ -143,9 +201,12 @@ dkfdskf
 <td colspan="4">
 <iframe src="https://www.youtube.com/embed/R-YyD1o1HXU" gesture="media" allowfullscreen="" frameborder="0" height="315" width="560"></iframe></td>
 </tr>
+<br>
+<br>
 <tr>
 <td colspan="5">
-<button type="button" class="KFRScreenshotButton" id="flipS">Screenshots</button>
+<hr><button type="button" class="KFRScreenshotButton" id="flipS">Screenshots</button>
+<hr>
 <div id="panelS">
 <table>
 <tbody>
@@ -167,8 +228,9 @@ dkfdskf
 </tr>
 <tr>
 <td colspan="5">
-<button type="button" class="KFRGalleryButton" id="flip">Development
+<hr><button type="button" class="KFRGalleryButton" id="flip">Development
 Gallery</button>
+<hr>
 <div id="panel">
 <table>
 <tbody>
@@ -214,16 +276,33 @@ Gallery</button>
 <tr>
 <td rowspan="2">
 <img src="PacBird/Icon.png" class="appIcon"></td>
-<td colspan="3">
+<td colspan="4">
 <p class="appTitle">Ms. PacBird</p>
 </td>
-<td>
+<td rowspan="7" valign="top">
+<p class="summary"><b>Release date: </b></p>
+<p>February 2017</p>
+<p class="summary"><b>Technologies: </b></p>
+<p>Android Studio, libGDX, Java, MS Paint</p>
 <p class="summary"><b>Summary:</b><br>
-This one was a tough one...<br>
-fsn<br>
-kjsdnf<br>
-dfjks
-</p>
+I took my first Computer Science class in college. Before this, I had
+never really looked into programming.
+As soon as I took this class, I became very passionate about the topic.
+When the course finished, not only did
+I declare my major to be CS (I came to college undeclared), but I also
+wanted to learn new things on my own.
+I had always liked videogames, and the idea of creating a mobile app
+really caught my attention. I did some research online and I came
+across some Android Studio tutorials. After a few weeks of learning, I
+downloaded Android Studio and decided to start working. I also found
+out about the libGDX library, which helps in the development of games.
+Back then, I had no knowledge of Photoshop or any animation software,
+so I went with MS Paint. I draw all my elements in Paint and developed
+the game in Java (my introductory class was in C++, so I had to learn
+Java as well). After around one month, I published my first game to the
+Google Play Store. Given how simple it is, it probably should have
+taken me a lot less time, but I was just starting, so I was a little
+green haha. </p>
 </td>
 </tr>
 <!--It goes here -->
@@ -246,18 +325,127 @@ dfjks
 </tr>
 <tr>
 <td colspan="4">
-<iframe src="https://www.youtube.com/embed/R-YyD1o1HXU" gesture="media" allowfullscreen="" frameborder="0" height="315" width="560"></iframe></td>
+<table>
+<tbody>
+<tr>
+<td><img src="PacBird/screenshot1.png" class="PacSPhotos"></td>
+<td><img src="PacBird/screenshot2.png" class="PacSPhotos"></td>
+<td><img src="PacBird/screenshot3.png" class="PacSPhotos"></td>
+</tr>
+<tr>
+<td><img src="PacBird/screenshot4.png" class="PacSPhotos"></td>
+<td><img src="PacBird/screenshot5.png" class="PacSPhotos"></td>
+</tr>
+<tr>
+<td><img src="PacBird/Pic1.png" class="PacdevPhotos"></td>
+<td><img src="PacBird/Pic2.png" class="PacdevPhotos"></td>
+<td><img src="PacBird/Pic3.png" class="PacdevPhotos"></td>
+</tr>
+<tr>
+<td><img src="PacBird/Pic4.png" class="PacdevPhotos"></td>
+<td><img src="PacBird/Pic5.png" class="PacdevPhotos"></td>
+<td><img src="PacBird/Pic6.png" class="PacdevPhotos"></td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <!--Type ends here -->
+<!--Type starts here -->
+<div class="mySlides fade">
+<table>
+<tbody>
+<tr>
+<td rowspan="2">
+<img src="ZombieGame/Icon.png" class="appIcon"></td>
+<td colspan="3" style="height: 25px;">
+<p class="appTitle">Untitled</p>
+</td>
+<td>
+<p class="summary"><b>Release Date: </b>
+TBD</p>
+<p class="summary"><b>Technologies: </b></p>
+<p>Unity, C#, Intuos Tablet, Photoshop, Multiplayer</p>
+<p class="summary"><b>Summary:</b><br>
+After <i>Kung Fu Runner</i>, I wanted to keep introducing
+more complexity to my apps. This game will give more freedom to the
+player. It is going to be a platformer/shooter. The character will be
+able to move in all directions and shoot enemies, instead of the
+simpler 2D runner type. I also love drawing, so I wanted to use this as
+well. Every single element in the game has been hand drawn using an
+Intuos drawing tablet in Photoshop. The gameplay is pretty much done,
+but I wanted to make this game even better by implementing <b>online
+multiplayer</b>. I also started
+working on another project (more details in the next slide) and all
+this, along with school work, is a heavy load. I am planning on
+releasing it before the end of the year, however.</p>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td colspan="5">
+<hr><button type="button" class="ZGScreenshotButton" id="flipSZ">Screenshots</button>
+<hr>
+<div id="panelSZ">
+<table>
+<tbody>
+<tr>
+<td colspan="4"><img src="ZombieGame/Gameplay1.png" class="ZGGameplay"></td>
+<td colspan="4"><img src="ZombieGame/Gameplay2.png" class="ZGGameplay"></td>
+</tr>
+<tr>
+<td><img src="ZombieGame/Char1.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char2.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char3.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char4.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char5.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char6.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char7.png" class="ZGChar"></td>
+</tr>
+<tr>
+<td><img src="ZombieGame/Char8.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char9.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char10.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char11.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char12.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char13.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char14.png" class="ZGChar"></td>
+<td><img src="ZombieGame/Char15.png" class="ZGChar"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--Type ends here -->
+<!--Type starts here -->
+<div class="mySlides fade">
+<h3>Untitled Virtual Reality Game</h3>
+<p>I got my first Virtual Reality set at the end of the Summer
+(2017) and I immediately got hooked. It all felt so real! After playing
+a few games (and jumping a few times with a horror game), I knew I
+wanted to develop my own game.
+I recently contacted students in the 3D modelling and animation
+department at my university to help me with the design of the game.
+After creating a few apps on my own, I realized that I would be able to
+create this game faster with the help of more experienced animators and
+modellers. This project is in very early stages, but I am planning on
+releasing it before the start of the Summer of 2018...</p>
+</div>
+<!--Type ends here -->
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 <br>
 <!--Dots start -->
-<div style="text-align: center;"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span></div>
+<div style="text-align: center;"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span><span class="dot" onclick="currentSlide(4)"></span></div>
 <!--Dots end -->
-<!--Ends here -->
+<!--Ends here --></div>
+</div>
 </body></html>

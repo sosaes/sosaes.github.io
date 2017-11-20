@@ -2,8 +2,7 @@
 <html><head>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Education</title>
 
-<link rel="stylesheet" type="text/css" href="education.css"><title>Projects</title>
-
+<link rel="stylesheet" type="text/css" href="education.css">
 <script type="text/javascript">
 document.addEventListener('mousemove', function(event) {
 if(window.event) {
@@ -16,12 +15,43 @@ elementID.style.backgroundPositionX = mousePositionX / 80 + 'px';
 elementID.style.backgroundPositionY = mousePositionY / 60 + 'px';
 }, false );
 </script>
+<script type="text/javascript">
+function projects() {
+window.location.href="Projects.html";
+}
+function about() {
+window.location.href="index.html";
+}
+function transcript() {
+window.location.href="Transcript.pdf";
+}
+</script>
 </head>
-<body>
+<body style="background-color: rgb(245, 245, 245);">
 <div id="lowPoly"></div>
 <h1 class="nameHeader">Education</h1>
+<table class="tabs">
+<tbody>
+<tr>
+<td class="tabstd"> <button type="button" onclick="about()" id="tabsButton" class="tabsButton"><b>About</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="projects()" id="tabsButton" class="tabsButton"><b>Projects</b></button>
+</td>
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button" onclick="education()" id="tabsButton" class="tabsButton"><b>Education</b></button>
+</td>
+<!--Interests Button
+<td style="color: white; font-size: 20px;"><b>|</b></td>
+<td class="tabstd"> <button type="button"
+onclick="interests()" id="tabsButton" class="tabsButton"><b>Interests</b></button>
+</td>
+-->
+</tr>
+</tbody>
+</table>
 <div id="allButHeader">
-<table>
+<table class="theTable">
 <tbody>
 <tr>
 <td>
@@ -31,16 +61,15 @@ elementID.style.backgroundPositionY = mousePositionY / 60 + 'px';
 <tr>
 <td>
 <h2 class="majorName">Bachelor of Science in
-Computer Science</h2>
+Computer Science | Bachelor of Science in Physics</h2>
 </td>
-<td rowspan="4">
-<img src="LongwoodPic.png" style="width: 283px; height: 190px;"></td>
 </tr>
 <tr>
 <td>
-<h2 class="minorName"> Minor in Physics | Minor in
+<h2 class="minorName">Minor in
 Mathematics</h2>
 </td>
+<td rowspan="4" align="center"><img src="LongwoodPic.png" style="width: 283px; height: 190px;"></td>
 </tr>
 <tr>
 <td>
@@ -64,6 +93,8 @@ Mathematics</h2>
 </tr>
 </tbody>
 </table>
+<br>
+<br>
 <table class="coursesTable">
 <tbody>
 <tr>
@@ -147,6 +178,10 @@ Spring 2018
 <li>Graph Theory</li>
 </ul>
 </td>
+<td>
+</td>
+<td>
+</td>
 </tr>
 <tr>
 <td>
@@ -169,6 +204,8 @@ Fall 2018
 <li>AC/DC Circuits</li>
 <li>Electricity and Magnetism</li>
 </ul>
+</td>
+<td>
 </td>
 </tr>
 <tr>

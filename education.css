@@ -1,6 +1,6 @@
 #lowPoly {
 border: 1px solid #0000;
-background-image:url("BG2.jpg");
+background-image:url("BG2.JPG");
 background-size:100% 400px;
 position: relative;
 width:100%;
@@ -125,32 +125,58 @@ border: 1px solid black;
 }
 
 .schoolName {
-font-size: 80px;
+font-size: 50px;
 font-family: "Monospace";
-font-style: oblique;
-color: #3B6699;
+color: #191970;
 }
 
 .majorName {
-font-size: 40px;
+font-size: 30px;
 font-family: "Monospace";
-color: #386699;
+color: #191970;
 }
 
 .minorName {
-font-size: 30px;
+font-size: 25px;
 font-family: "Monospace";
-color: #366699;
+color: #191970;
 }
 
 .majorInfo {
 font-size: 25px;
 font-family: "Monospace";
-color: #336699;
+color: #191970;
 }
 
 #allButHeader {
 position: relative;
 z-index:2;
-top: -350px;
+top: -450px;
+left: 30px;
 }
+
+.tabs {
+position:relative;
+z-index:5;
+top: -650px;
+left: 800px;
+}
+
+.tabstd {
+padding:20px;
+}
+
+.tabsButton {
+background-color: Transparent;
+border:none;
+cursor:pointer;
+border-radius:25px;
+color: 	#DCDCDC;
+font-family:"Monospace";
+font-size:30px;
+}
+
+.tabsButton:hover {
+color: 		#A9A9A9;
+}
+
